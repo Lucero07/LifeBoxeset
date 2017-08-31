@@ -1,0 +1,157 @@
+#desktop, #movile {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.mobile-slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+  width: 100vw;
+}
+
+.slide-nav {
+  background: #000;
+}
+
+.unidad {
+  border-radius: 50%;
+  height: 2vh;
+  width: 1vw;
+  background-color: rgba(250, 250, 250, 0.4);
+  border: none;
+}
+
+.unidad:hover {
+  background-color: #6bc2bd;
+}
+
+.uk-navbar-nav>li>a:hover {
+  color: #6bc2bd;
+}
+
+.uk-navbar-nav>li>a {
+  color: #fff;
+}
+
+.imagen {
+  width: 100vw;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #000;
+}
+
+footer {
+  background-color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.contenedor {
+  margin: 5vh 5vw;
+}
+
+#video{
+  position: absolute;
+  width: 40vw;
+  height: 30vh;
+  left: 30vw;
+  top: 2vh;
+}
+.video{
+  position: absolute;
+  width: 40vw;
+  height: 30vh;
+}
+
+
+@media all and (max-width: 425px) {
+  #desktop {
+    display: none;
+  }
+  .mobile-slide {
+    display: block;
+    background: #000;
+    color: #fff;
+    border: 0;
+  }
+  #mobile-footer {
+    display: block;
+  }
+  #desktop-footer {
+    display: none;
+  }
+  .foco {
+    display: none;
+  }
+  .slide-nav {
+    padding: 0 10vw;
+  }
+  .anterior {
+    margin-right: 10vw;
+  }
+  .siguiente {
+    margin-left: 10vw;
+  }
+  .video{
+    position: absolute;
+  width: 60vw;
+  height: 60%;
+  top: 30%;
+  right: -29%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #mobile-footer {
+    display: block;
+  }
+  #desktop-footer {
+    display: none;
+  }
+  #fuera-foco {
+    display: flex;
+  }
+
+}
+
+
+@media all and (min-width: 1200px) {
+  #mobile-footer {
+    display: none;
+  }
+  #desktop-footer {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 100%) {
+  #desktop {
+    display: block;
+  }
+  .mobile-slide {
+    display: none;
+  }
+  #mobile-footer {
+    display: none;
+  }
+  #desktop-footer {
+    display: none;
+  }
+  .logo {
+    width: 10vw;
+    height: 10vh;
+  }
+  .anterior {
+    margin-right: 20vw;
+  }
+  .siguiente {
+    margin-left: 20vw;
+  }
+}
